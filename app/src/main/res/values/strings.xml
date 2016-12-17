@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dashboard</string>
+    <string name="menu_main_about">Credits</string>
+    <!--MainActivity-->
+    <string name="hint_aur_id">Enter Aurganon ID</string>
+    <string name="trigger_scan">Scan Code</string>
+    <string name="or">OR</string>
+
+    <!--DetailsActivity-->
+    <string name="activity_details">Participant Details</string>
+
+    <!--AboutActivity-->
+    <string name="about_developer">Credits</string>
+    <string name="about_description">This application is developed by Project Club. Add more..</string>
+</resources>

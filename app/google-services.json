@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "770373474517",
+    "firebase_url": "https://aurganon-1f27c.firebaseio.com",
+    "project_id": "aurganon-1f27c",
+    "storage_bucket": "aurganon-1f27c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770373474517:android:3739dc90ec967a51",
+        "android_client_info": {
+          "package_name": "com.aurganon.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770373474517-lo8kk3cdr5afkjuogc8k3eact03mipr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6Z_Lnf2gQOeYUrdv8OUj0-lV9bYKOf90"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770373474517:android:9c9d84bdd1115289",
+        "android_client_info": {
+          "package_name": "com.aurganon.dashboard.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770373474517-lo8kk3cdr5afkjuogc8k3eact03mipr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6Z_Lnf2gQOeYUrdv8OUj0-lV9bYKOf90"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
