@@ -1,10 +1,10 @@
-package com.aurganon.dashboard.activity;
+package com.aurganon.dashboard.android.ux;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.aurganon.dashboard.R;
+import com.aurganon.dashboard.android.R;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 /**
