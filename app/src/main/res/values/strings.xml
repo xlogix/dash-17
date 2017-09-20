@@ -1,10 +1,22 @@
 <resources>
     <string name="app_name">Dashboard</string>
     <string name="menu_main_about">Credits</string>
+
     <!--MainActivity-->
     <string name="hint_aur_id">Enter Aurganon ID</string>
     <string name="trigger_scan">Scan Code</string>
     <string name="or">OR</string>
+
+  <!-- STRINGS -->
+    <string name="title_activity_ticket">Book Ticket</string>
+    <string name="lbl_duration">DURATION</string>
+    <string name="lbl_genre">GENRE</string>
+    <string name="lbl_rating">RATING</string>
+    <string name="lbl_price">PRICE</string>
+    <string name="btn_buy_now">BUY NOW</string>
+    <string name="btn_coming_soon">COMING SOON</string>
+    <string name="msg_no_ticket_found">No ticket found. Try scanning the QR Codes from http://api.androidhive.info/qrcodes/</string>
+    <string name="lbl_scan_activity">Scan QR Code</string>
 
     <!--DetailsActivity-->
     <string name="activity_details">Participant Details</string>

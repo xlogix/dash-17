@@ -19,8 +19,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.aurganon.dashboard.android.R;
-import com.aurganon.dashboard.android.helpers.AppConfig;
-import com.aurganon.dashboard.android.helpers.AppController;
+import com.aurganon.dashboard.android.app.AppConfig;
+import com.aurganon.dashboard.android.app.AppController;
 import java.util.HashMap;
 import java.util.Map;
 import org.json.JSONException;
@@ -39,21 +39,21 @@ public class DetailsActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_details);
 
-    swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
+    swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
     swipeRefreshLayout.setColorSchemeResources(R.color.red_primary, R.color.black,
         R.color.blue_primary);
 
-    userID = (TextView) findViewById(R.id.id);
-    userName = (TextView) findViewById(R.id.name);
-    userCollege = (TextView) findViewById(R.id.coll);
-    userPhoneNo = (TextView) findViewById(R.id.phone);
-    userEmail = (TextView) findViewById(R.id.email);
-    userRegistrationNo = (TextView) findViewById(R.id.reg);
-    userDepartment = (TextView) findViewById(R.id.dept);
-    userYear = (TextView) findViewById(R.id.yr);
-    userEvents = (TextView) findViewById(R.id.part);
-    att = (Button) findViewById(R.id.check);
-    scan = (Button) findViewById(R.id.scanAnother);
+    userID = findViewById(R.id.id);
+    userName = findViewById(R.id.name);
+    userCollege = findViewById(R.id.coll);
+    userPhoneNo = findViewById(R.id.phone);
+    userEmail = findViewById(R.id.email);
+    userRegistrationNo = findViewById(R.id.reg);
+    userDepartment = findViewById(R.id.dept);
+    userYear = findViewById(R.id.yr);
+    userEvents = findViewById(R.id.part);
+    att = findViewById(R.id.check);
+    scan = findViewById(R.id.scanAnother);
 
     // Progress dialog
     pDialog = new ProgressDialog(this);

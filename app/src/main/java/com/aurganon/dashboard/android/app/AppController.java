@@ -1,4 +1,4 @@
-package com.aurganon.dashboard.android.helpers;
+package com.aurganon.dashboard.android.app;
 
 import android.app.Application;
 import android.text.TextUtils;

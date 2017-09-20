@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
       mCameraId = -1;
     }
     setContentView(R.layout.activity_main);
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     askPermission();
     mScannerView = new ZXingScannerView(this);
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
     setContentView(mScannerView);
 
     mScannerView.setResultHandler(this); // Register ourselves as a handler for scan results.
-    mScannerView.startCamera();         // Start camera
+    mScannerView.startCamera();          // Start camera
   }
 
   @Override public void handleResult(Result rawResult) {
@@ -123,8 +124,7 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
     int id = item.getItemId();
 
     if (id == R.id.action_about) {
-      Intent credits = new Intent(MainActivity.this, AboutActivity.class);
-      startActivity(credits);
+      Snackbar.make(mScannerView, "Message is deleted", Snackbar.LENGTH_LONG);
       return true;
     }
     return super.onOptionsItemSelected(item);
