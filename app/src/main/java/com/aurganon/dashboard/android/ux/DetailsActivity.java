@@ -37,7 +37,7 @@ public class DetailsActivity extends Activity {
 
   @Override public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_details);
+    setContentView(R.layout.activity_details_alternative);
 
     swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
     swipeRefreshLayout.setColorSchemeResources(R.color.red_primary, R.color.black,
@@ -61,7 +61,7 @@ public class DetailsActivity extends Activity {
 
     scan.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        Intent myintent = new Intent(DetailsActivity.this, MainActivity.class);
+        Intent myintent = new Intent(DetailsActivity.this, MainActivity2.class);
         startActivity(myintent);
         finish();
       }

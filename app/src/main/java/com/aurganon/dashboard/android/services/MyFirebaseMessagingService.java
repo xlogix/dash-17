@@ -23,7 +23,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import com.aurganon.dashboard.android.app.AppConfig;
 import com.aurganon.dashboard.android.utiils.NotificationUtils;
-import com.aurganon.dashboard.android.ux.MainActivity;
+import com.aurganon.dashboard.android.ux.MainActivity2;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import org.json.JSONException;
@@ -113,7 +113,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         notificationUtils.playNotificationSound();
       } else {
         // app is in background, show the notification in notification tray
-        Intent resultIntent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent resultIntent = new Intent(getApplicationContext(), MainActivity2.class);
         resultIntent.putExtra("message", message);
 
         // check for image attachment

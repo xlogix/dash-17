@@ -3,12 +3,9 @@
     android:installLocation="auto"
     package="com.aurganon.dashboard.android">
 
-  <uses-permission android:name="android.permission.CAMERA"/>
   <uses-permission android:name="android.permission.INTERNET"/>
-  <uses-permission android:name="android.permission.VIBRATE"/>
-  <uses-permission android:name="android.permission.FLASHLIGHT"/>
 
-  <!-- not required -->
+  <!-- Permissions declaration for old Samsung devices -->
   <uses-feature
       android:name="android.hardware.camera.any"
       android:required="false"/>
@@ -45,24 +42,6 @@
         android:value="false"/>
 
     <activity
-        android:name=".ux.MainActivity"
-        android:theme="@style/AppTheme.NoActionBar"/>
-
-    <activity
-        android:name=".ux.DetailsActivity"
-        android:theme="@style/AppTheme"/>
-
-    <activity
-        android:name=".ux.ScanActivity"
-        android:label="@string/lbl_scan_activity"
-        android:screenOrientation="portrait" />
-    <activity
-        android:name=".ux.TicketResultActivity"
-        android:label="@string/title_activity_ticket"
-        android:screenOrientation="portrait"
-        android:theme="@style/AppTheme.NoActionBar" />
-
-    <activity
         android:name=".ux.SplashActivity"
         android:screenOrientation="portrait"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
@@ -79,6 +58,29 @@
         <data android:scheme="instify"/>
       </intent-filter>
     </activity>
+
+    <activity
+        android:name=".ux.MainActivity2"
+        android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity
+        android:name=".ux.DetailsActivity"
+        android:theme="@style/AppTheme"/>
+
+    <activity
+        android:name=".ux.MainActivity"
+        android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity
+        android:name=".ux.ScanActivity"
+        android:label="@string/lbl_scan_activity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ux.TicketResultActivity"
+        android:label="@string/title_activity_ticket"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"/>
 
     <!-- Firebase Notifications -->
     <service

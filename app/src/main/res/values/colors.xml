@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryLight">#b4b4b4</color>
-    <!-- Toolbar -->
-    <color name="colorPrimary">#039BE5</color>
-    <!-- Status bar -->
-    <color name="colorPrimaryDark">#0288D1</color>
-    <!-- Navigation bar-->
-    <color name="navigationBarColor">#29b6f6</color>
-    <!-- Color Accent -->
-    <color name="colorAccentLight">#F8BBD0</color>
-    <color name="colorAccent">#ee1f65</color>
-    <color name="colorAccentDark">#c2185b</color>
+  <color name="colorPrimaryLight">#b4b4b4</color>
+  <!-- Toolbar -->
+  <color name="colorPrimary">#039BE5</color>
+  <!-- Status bar -->
+  <color name="colorPrimaryDark">#0288D1</color>
+  <!-- Navigation bar-->
+  <color name="navigationBarColor">#29b6f6</color>
+  <!-- Color Accent -->
+  <color name="colorAccentLight">#F8BBD0</color>
+  <color name="colorAccent">#ee1f65</color>
+  <color name="colorAccentDark">#c2185b</color>
 
-    <color name="bg_login">#26ae90</color>
-    <color name="bg_main">#428bca</color>
-    <color name="white">#ffffff</color>
-    <color name="black">#222222</color>
-    <color name="input_login_hint">#999999</color>
-    <color name="btn_login">#26ae90</color>
-    <color name="btn_login_bg">#eceef1</color>
+  <color name="bg_login">#26ae90</color>
+  <color name="bg_main">#428bca</color>
+  <color name="white">#ffffff</color>
+  <color name="black">#222222</color>
+  <color name="input_login_hint">#999999</color>
+  <color name="btn_login">#26ae90</color>
+  <color name="btn_login_bg">#eceef1</color>
 
-    <color name="viewBg">#f8f8f8</color>
-    <color name="btn_disabled">#999</color>
-    <color name="lbl_value">#222222</color>
+  <!-- UI colors-->
+  <color name="transparent">#00000000</color>
+  <color name="red_primary">#d32f2f</color>
+  <color name="blue_primary">#2196F3</color>
 
-    <!-- UI colors-->
-    <color name="transparent">#00000000</color>
-    <color name="semi_transparent">#bd000000</color>
-    <color name="black_transparent_70percent">#B3000000</color>
-    <color name="semi_light_transparent">#5a000000</color>
-    <color name="semi_lighter_transparent">#2d000000</color>
+  <color name="viewBg">#f8f8f8</color>
+  <color name="btn_disabled">#999</color>
+  <color name="lbl_value">#222222</color>
 </resources>
