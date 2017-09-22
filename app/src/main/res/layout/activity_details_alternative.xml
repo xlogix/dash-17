@@ -1,253 +1,286 @@
 <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/swipe_refresh_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:fitsSystemWindows="true"
+      >
+
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:fitsSystemWindows="true">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".activity.DetailsActivity"
+        >
 
-        <LinearLayout
-            android:layout_width="fill_parent"
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20dp"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:context=".activity.DetailsActivity">
+            android:paddingLeft="10dp"
+            android:text="AURGANON ID :"
+            android:textColor="@color/black"
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="0.50"
+            android:textColor="@color/black"
+            />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="AURGANON ID :"
-                    android:textColor="@color/black" />
+      </LinearLayout>
 
-                <TextView
-                    android:id="@+id/id"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40px"
-                    android:layout_weight="0.50"
-                    android:textColor="@color/black" />
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20px"
+          >
 
-            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="PARTICIPANT NAME: "
+            android:textColor="@color/black"
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20px">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_weight="0.50"
+            android:textColor="@color/black"
+            />
+      </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="PARTICIPANT NAME: "
-                    android:textColor="@color/black" />
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20px"
+          >
 
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="40px"
-                    android:layout_weight="0.50"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="PARTICIPANT EMAIL: "
+            android:textColor="@color/black"
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20px">
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="PARTICIPANT EMAIL: "
-                    android:textColor="@color/black" />
+            android:layout_weight="0.50"
+            android:paddingTop="20px"
+            android:textColor="@color/black"
+            />
+      </LinearLayout>
 
-                <TextView
-                    android:id="@+id/email"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="40px"
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20px"
+          >
 
-                    android:layout_weight="0.50"
-                    android:paddingTop="20px"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="PARTICIPANT PHONE: "
+            android:textColor="@color/black"
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20px">
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_weight="0.50"
+            android:paddingTop="20px"
+            android:textColor="@color/black"
+            />
+      </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="PARTICIPANT PHONE: "
-                    android:textColor="@color/black" />
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20px"
+          >
 
-                <TextView
-                    android:id="@+id/phone"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="40px"
-                    android:layout_weight="0.50"
-                    android:paddingTop="20px"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="PARTICIPANT COLLEGE: "
+            android:textColor="@color/black"
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20px">
+        <TextView
+            android:id="@+id/coll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_weight="0.50"
+            android:textColor="@color/black"
+            />
+      </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="PARTICIPANT COLLEGE: "
-                    android:textColor="@color/black" />
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20dp"
+          >
 
-                <TextView
-                    android:id="@+id/coll"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="40px"
-                    android:layout_weight="0.50"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="REGISTRATION: "
+            android:textColor="@color/black"
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.50"
+            android:textColor="@color/black"
+            />
+      </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="REGISTRATION: "
-                    android:textColor="@color/black" />
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20dp"
+          >
 
-                <TextView
-                    android:id="@+id/reg"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="40dp"
-                    android:layout_weight="0.50"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="DEPARTMENT: "
+            android:textColor="@color/black"
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
+        <TextView
+            android:id="@+id/dept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.50"
+            android:textColor="@color/black"
+            />
+      </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="DEPARTMENT: "
-                    android:textColor="@color/black" />
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20dp"
+          >
 
-                <TextView
-                    android:id="@+id/dept"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="40dp"
-                    android:layout_weight="0.50"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="PARTICIPANT YEAR: "
+            android:textColor="@color/black"
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
+        <TextView
+            android:id="@+id/yr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.50"
+            android:textColor="@color/black"
+            />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="PARTICIPANT YEAR: "
-                    android:textColor="@color/black" />
+      </LinearLayout>
 
-                <TextView
-                    android:id="@+id/yr"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_weight="0.50"
-                    android:textColor="@color/black" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20dp"
+          >
 
-            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="PARTICIPATED IN: "
+            android:textColor="#000000"
+            />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
+        <TextView
+            android:id="@+id/part"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:textColor="#000000"
+            />
+      </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:paddingStart="10dp"
-                    android:text="PARTICIPATED IN: "
-                    android:textColor="#000000" />
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingTop="20dp"
+          >
 
-                <TextView
-                    android:id="@+id/part"
-                    android:layout_width="match_parent"
-                    android:layout_height="8dp"
-                    android:textColor="#000000" />
-            </LinearLayout>
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text=""
+            />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
+      </LinearLayout>
 
-                <Button
-                    android:id="@+id/check"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:paddingStart="10dp"
-                    android:text="" />
+      <Button
+          android:id="@+id/scanAnother"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="30dp"
+          android:paddingTop="10dp"
+          android:text="SCAN ANOTHER"
+          />
 
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/scanAnother"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:paddingTop="10dp"
-                android:text="SCAN ANOTHER" />
-
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+  </ScrollView>
 </android.support.v4.widget.SwipeRefreshLayout>

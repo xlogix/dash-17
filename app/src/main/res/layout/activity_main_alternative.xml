@@ -3,60 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
-    <android.support.design.widget.AppBarLayout
+  <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/AppTheme.AppBarOverlay"
+      >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+  </android.support.design.widget.AppBarLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:weightSum="1"
+      >
+
+    <Button
+        android:id="@+id/scanner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_weight="0.19"
+        android:background="@color/btn_login_bg"
+        android:onClick="QrScanner"
+        android:text="@string/trigger_scan"
+        android:textColor="@color/btn_login"
+        android:textSize="15sp"
+        />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:text="@string/or"
+        android:textSize="28sp"
+        />
 
-    </android.support.design.widget.AppBarLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:weightSum="1">
-
-        <Button
-            android:id="@+id/scanner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.19"
-            android:background="@color/btn_login_bg"
-            android:onClick="QrScanner"
-            android:text="@string/trigger_scan"
-            android:textColor="@color/btn_login"
-            android:textSize="15sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="48dp"
-            android:text="@string/or"
-            android:textSize="28sp" />
-
-        <EditText
-            android:id="@+id/enter_aur_id"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="48dp"
-            android:layout_weight="0.19"
-            android:background="@color/btn_login_bg"
-            android:inputType="textCapCharacters"
-            android:hint="@string/hint_aur_id"
-            android:padding="16dp"
-            android:singleLine="true"
-            android:textColor="@color/bg_main"
-            android:textColorHint="@color/bg_main" />
-    </LinearLayout>
+    <EditText
+        android:id="@+id/enter_aur_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="0.19"
+        android:background="@color/btn_login_bg"
+        android:hint="@string/hint_aur_id"
+        android:inputType="textCapCharacters"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/bg_main"
+        android:textColorHint="@color/bg_main"
+        />
+  </LinearLayout>
 </LinearLayout>
